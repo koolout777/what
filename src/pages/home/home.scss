@@ -1,3 +1,37 @@
-page-home {
 
+#homecontent{
+    display:block;
+    margin:0 auto;
+    ovelflow:hidden;
 }
+.customElastic{
+	padding:13px 12px;
+	display:block;
+    margin:0 auto;
+	border:1px solid #755b98;
+	width:99%;
+	border-radius: 10px;
+}
+span {
+	padding-left:10px;
+}
+.wrapper {
+	position:relative;
+	background-image:url("../assets/images/background_purple.jpeg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	min-height:100% ;
+
+	.content {
+		position:absolute;
+		top: 50%;
+ 		left: 50%;
+ 		transform: translate(-50%, -50%);
+	}
+}
+
+ ::-webkit-scrollbar{
+    display:none;
+  }
+  

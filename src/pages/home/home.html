@@ -5,27 +5,29 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
+<ion-content>
+<div class="wrapper">
 <ion-grid>
 	<ion-row>
 		<ion-col align-self-center>
-			<img src="../assets/images/what-logo-lg.png">
+			<!--<img src="../assets/images/what-logo.png" id="homecontent">-->
 		</ion-col>
 	</ion-row>
 </ion-grid>
-
-
-
-
-<ion-card no-line>
-	<ion-card-content>
-		<ion-input auto-grow type="textbox" placeholder="What?"></ion-input>
-	</ion-card-content>
-</ion-card>
- <ion-grid>
+  <ion-grid class="content">
     <ion-row>
-      <ion-col><button ion-button primary large full round>GO</button></ion-col>
-      <ion-col><button ion-button primary large full round>CLEAR</button></ion-col>
+   
+      <textarea fz-elastic placeholder="What?" class="customElastic"></textarea>
+    
+      <ion-col>
+      <button ion-button full block (click)="goFunction()" color="primary" >GO</button>
+    </ion-col>
+      
+      <ion-col>
+      <button ion-button full block color="primary" >CLEAR</button>
+      </ion-col>
+
     </ion-row>
   </ion-grid>
+</div>
 </ion-content>
